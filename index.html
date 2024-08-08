@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>شركة الصاعدين للمقاولات</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" />
+      -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- to use font in body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <!-- to active spinner -->
+  <link href="css/spinner.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/slideshow.css">
+  <link rel="stylesheet" href="css/main.css" />
+
+  <script src="js/slideshow.js"></script>
+  <script src="js/spinner.js"></script>
+</head>
+
+<body>
+
+  <div class="spinner-overlay">
+    <div class="spinner-container">
+      <img src="images/spinner.jpg" alt="Loading..." class="spinner-image">
+      <p class="loading-text" data-i18n="Loading">Loading</p>
+      <!-- <p="farewell">Goodbye</p> -->
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="logo" class="logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#main">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#vision">رؤيتنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">قيمنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">خدماتنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">شركاؤنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">تواصل معنا </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Start Main Section -->
+  <div class="mainSection" id="main">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="images/slide5.jpeg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/slide1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/slide3.jpeg" class="d-block w-100" alt="..." />
+
+          <!-- https://images.pexels.com/photos/1106431/pexels-photo-1106431.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load -->
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="images/slide4.jpeg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- End Main Section -->
+
+  <!-- Start about Section -->
+  <div class="container mt-5" id="about">
+    <h2 class="text-center mb-3">من نحن</h2>
+    <div class="row about-us">
+      <div class="col-md-6">
+        <div class="box shadow">
+          <div class="info">
+            <p>
+              شركة الصاعدين للمقاولات هي شركة مقاولات عامة متعددة الأوجه،
+              يعتمد نجاحها على فريق من المهنيين ذوي المهارات العالية والتفاني.
+              منذ بدايتها قبل عام 2008 ، شهدت الشركة نمواً مطرداً جنبا إلى جنب
+              مع مواردها وخبراتها الكبيرة ، مما جعلها واحدة من شركات المقاولات
+              الرائدة المملكة العربية السعودية.
+            </p>
+          </div>
+        </div>
+        <div class="box shadow">
+          <div class="info">
+            <p>
+              منذ إنشائها وتماشياً مع رؤية المملكة العربية السعودية 2030 ،
+              تسعى شركتنا إلى دفع حدود التنويع باستمرار في القطاعات التي تؤثر
+              بشكل إيجابي على أعمالها الأساسية وتتكامل معها وتظل شركتنا ثابتة
+              في الوفاء بوعدها بالتأكيد على الالتزام بالجودة العالية.
+            </p>
+          </div>
+        </div>
+        <div class="box shadow">
+          <div class="info">
+            <p>
+              تشمل أنشطة شركتنا: نظافة المدن ونظافة وصيانة المباني الحكومية
+              والخاصة و صيانة المسطحات الخضراءوتأجير الحاويات وهذا جنباً إلى
+              جنب مع القدرات الشاملة والكفاءات الإدارية ، الشكل الذي يضمن
+              قدرتنا على تلبية متطلبات العملاء وإنجازها من البداية إلى
+              النهاية. ونحن ملتزمون ببناء علاقة طويلة الأمد قائمة على الأداء
+              المتميز والنزاهة ورضا العميل.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="images/who-are.jpeg" alt="صورة الشركة" class="w-100" />
+      </div>
+    </div>
+  </div>
+  <!-- End about Section -->
+
+  <!-- Start our vision Section -->
+  <div class="our-vision mt-5" id="vision">
+    <div class="container">
+      <div class="row box">
+        <h2 class="header text-center">رؤيتنا</h2>
+        <div class="content">
+          <p>
+            نحن في شركة الصاعدين للمقاولات نطمح إلى أن نكون الشركة الرائدة في
+            مجال المقاولات في المملكة العربية السعودية. نلتزم بتقديم أعلى
+            مستويات الجودة والاحترافية في جميع مشاريعنا، ونسعى جاهدين لتحقيق
+            رضا العملاء من خلال التفاني في العمل والابتكار المستمر. رؤيتنا هي
+            أن نكون جزءاً من تحقيق رؤية المملكة 2030 من خلال تطوير البنية
+            التحتية وتحسين جودة الحياة في مجتمعاتنا.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End our vision Section -->
+
+  <!-- Start Values Section -->
+  <div class="container">
+    <div class="row values-section gap-2">
+      <div class="col-12">
+        <h2>قيمنا</h2>
+      </div>
+      <div class="col-md-3 value-box">
+        <h3>الجودة</h3>
+        <p>
+          نلتزم بأعلى معايير الجودة في كل ما نقدمه من خدمات ومنتجات لعملائنا.
+        </p>
+      </div>
+      <div class="col-md-3 value-box">
+        <h3>الابتكار</h3>
+        <p>
+          نسعى باستمرار للابتكار وتطوير حلول جديدة تلبي احتياجات السوق
+          المتغيرة.
+        </p>
+      </div>
+      <div class="col-md-3 value-box">
+        <h3>الشفافية</h3>
+        <p>نعمل بنزاهة وشفافية تامة في جميع تعاملاتنا مع عملائنا وشركائنا.</p>
+      </div>
+    </div>
+  </div>
+  <!-- End Values Section -->
+
+  <!-- Start Services Section -->
+  <div class="container">
+    <div class="row services-section gap-2">
+      <div class="col-12">
+        <h2>خدماتنا</h2>
+      </div>
+      <div class="col-md-3 service-card">
+        <h3>نظافة المدن</h3>
+        <p>نقدم خدمات نظافة المدن بأعلى معايير الجودة.</p>
+      </div>
+      <div class="col-md-3 service-card">
+        <h3>نظافة المباني</h3>
+        <p>خدمات تنظيف وصيانة المباني الحكومية والخاصة.</p>
+      </div>
+      <div class="col-md-3 service-card">
+        <h3>صيانة المسطحات الخضراء</h3>
+        <p>نقدم خدمات صيانة المسطحات الخضراء والحدائق.</p>
+      </div>
+      <div class="col-md-3 service-card">
+        <h3>تأجير الحاويات</h3>
+        <p>نوفر خدمات تأجير الحاويات لمختلف الاستخدامات.</p>
+      </div>
+      <div class="col-md-3 service-card">
+        <h3>المقاولات العامة</h3>
+        <p>خدمات مقاولات عامة تشمل جميع أنواع الإنشاءات.</p>
+      </div>
+      <div class="col-md-3 service-card">
+        <h3>إدارة المشاريع</h3>
+        <p>خدمات إدارة المشاريع باحترافية عالية.</p>
+      </div>
+    </div>
+  </div>
+  <!-- End Services Section -->
+
+  <!-- Start Partners Section -->
+  <div class="container">
+    <div class="row partners-section">
+      <div class="col-12">
+        <h2>شركاؤنا</h2>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="partner-card">
+          <img src="images/parteners/1.png" alt="شركة 1" />
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="partner-card">
+          <img src="images/parteners/2.png" alt="شركة 2" />
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="partner-card">
+          <img src="images/parteners/3.png" alt="شركة 3" />
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="partner-card">
+          <img src="images/parteners/4.png" alt="شركة 4" />
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="partner-card">
+          <img src="images/parteners/5.png" alt="شركة 5" />
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="partner-card">
+          <img src="images/parteners/6.png" alt="شركة 6" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Partners Section -->
+
+  <!-- Start Footer Section -->
+  <div class="container-fluid">
+    <div class="row footer-section">
+      <div class="col-12 text-center">
+        <p>© 2023 جميع الحقوق محفوظة. جميع الحقوق محفوظة لموقع الشركة.</p>
+      </div>
+    </div>
+  </div>
+  <!-- End Footer Section -->
+  <!-- <script src="js/jq.js"></script>
+    <script src="js/bootstrap.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
