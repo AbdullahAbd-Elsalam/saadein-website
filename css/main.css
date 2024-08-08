@@ -1,20 +1,22 @@
+/* General settings */
 html {
   direction: rtl;
 }
 
-
 body {
-
   font-family: inter;
 }
 
+/* Logo settings */
 .logo {
   width: 70px;
   height: 70px;
 }
 
+/* Main section and carousel settings */
 .mainSection .carousel {
-  height: 80vh;
+  height: 60vh;
+  /* Adjust the height of the carousel to be smaller */
 }
 
 .mainSection .carousel .carousel-inner {
@@ -25,6 +27,19 @@ body {
   height: 100%;
 }
 
+/* Carousel image settings */
+.carousel-inner img {
+  max-height: 400px;
+  /* Reduce the maximum height */
+  width: 100%;
+  /* Make the image take up the full width */
+  object-fit: contain;
+  /* Maintain the image's aspect ratio without cropping */
+  image-rendering: auto;
+  /* Preserve image quality */
+}
+
+/* About us section settings */
 .about-us .box {
   display: flex;
   background: #fff;
@@ -51,6 +66,7 @@ body {
   color: #9e9e9e;
 }
 
+/* Our vision section settings */
 .our-vision .box .content {
   background: #fff;
   align-items: center;
@@ -65,6 +81,7 @@ body {
   color: #9e9e9e;
 }
 
+/* Values section settings */
 .values-section {
   background-color: #f8f9fa;
   padding: 40px 20px;
@@ -98,6 +115,7 @@ body {
   font-size: 1em;
 }
 
+/* Services section settings */
 .services-section {
   background-color: #f8f9fa;
   padding: 40px 20px;
@@ -131,6 +149,7 @@ body {
   font-size: 1em;
 }
 
+/* Partners section settings */
 .partners-section {
   background-color: #f8f9fa;
   padding: 40px 20px;
@@ -161,44 +180,26 @@ body {
   border-radius: 10px;
 }
 
-/*# sourceMappingURL=main.css.map */
-
-/* Navbar Background Color */
+/* Navbar settings */
 .navbar.navbar-light.bg-light {
   background-color: #dde4ec !important;
 }
 
-/* Padding for Navbar Collapse */
 .collapse.navbar-collapse {
   padding-left: 0;
-  /* Adjusted for mobile view */
 }
 
-/* Navbar Items Padding */
 .navbar-nav .nav-item {
   padding: 15px 20px;
-  /* Adjusted for mobile view */
 }
 
-/* Padding Adjustment for Larger Screens */
+/* Adjustments for larger screens */
 @media (min-width: 992px) {
   .collapse.navbar-collapse {
     padding-left: 200px;
-    /* Adjusted for larger screens */
   }
 
   .navbar-nav .nav-item {
     padding: 20px 20px;
-    /* Maintain the padding for larger screens */
   }
-}
-
-
-.carousel-inner img {
-  max-height: 700px;
-  /* Adjust this value as needed */
-  width: 50%;
-  /* Allows the width to adjust automatically */
-  object-fit: cover;
-  /* Ensures the image covers the container while preserving aspect ratio */
 }
