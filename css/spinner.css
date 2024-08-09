@@ -126,21 +126,21 @@ html {
 /* For mobile devices */
 @media (max-width: 768px) {
   .spinner-container {
-    width: 150px;
+    width: 180px;
     /* Adjust size for mobile */
-    height: 150px;
+    height: 180px;
   }
 
   .spinner-ring {
-    width: 150px;
+    width: 180px;
     /* Adjust size for mobile */
-    height: 150px;
+    height: 180px;
   }
 
   .inner-image {
-    width: 140px;
+    width: 170px;
     /* Adjust size for mobile */
-    height: 140px;
+    height: 170px;
   }
 
   .loading-text {
