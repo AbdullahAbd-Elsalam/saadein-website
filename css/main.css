@@ -16,7 +16,7 @@ body {
 /* Main section and carousel settings */
 .mainSection .carousel {
   height: 60vh;
-  /* Adjust the height of the carousel to be smaller */
+  /* Adjust the height of the carousel */
 }
 
 .mainSection .carousel .carousel-inner {
@@ -29,12 +29,12 @@ body {
 
 /* Carousel image settings */
 .carousel-inner img {
-  max-height: 400px;
-  /* Reduce the maximum height */
   width: 100%;
-  /* Make the image take up the full width */
-  object-fit: contain;
-  /* Maintain the image's aspect ratio without cropping */
+  /* Make the image take up the full width of the container */
+  height: 100%;
+  /* Make the image take up the full height of the container */
+  object-fit: cover;
+  /* Cover the container while preserving the image's aspect ratio */
   image-rendering: auto;
   /* Preserve image quality */
 }
