@@ -1,4 +1,11 @@
-/* Spinner overlay styles */
+/* Base Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 .spinner-overlay {
   position: fixed;
   top: 0;
@@ -16,13 +23,13 @@
   /* Hide spinner initially */
 }
 
-/* Spinner container styles */
+/* Spinner Container Styles */
 .spinner-container {
   position: relative;
   width: 300px;
-  /* Match the width of the spinner ring */
+  /* Default width */
   height: 300px;
-  /* Match the height of the spinner ring */
+  /* Default height */
   display: flex;
   align-items: center;
   /* Center the inner image vertically */
@@ -30,33 +37,34 @@
   /* Center the inner image horizontally */
 }
 
-/* Spinner ring styles */
+/* Spinner Ring Styles */
 .spinner-ring {
   width: 300px;
-  /* Adjust size as needed */
+  /* Default width */
   height: 300px;
-  /* Adjust size as needed */
+  /* Default height */
   border-radius: 50%;
   /* Circular border */
   border: 10px solid rgba(101, 85, 210, 0.2);
   /* Slightly brighter light border */
-  border-top: 10px solid #4d4aa4;
+  border-top: 10px solid #3531ad;
   /* Darker border on top for the spinning effect */
   background: linear-gradient(135deg, rgba(101, 85, 210, 0.2), rgba(101, 85, 210, 0.6));
   /* Gradient effect for brightness */
-  box-shadow: 0 0 15px rgba(101, 85, 210, 0.7);
+  box-shadow: 0 0 15px rgba(72, 57, 180, 0.7);
   /* Add a glow effect */
   position: absolute;
   /* Positioned within the container */
   animation: spin 1s linear infinite;
+  /* Spinner rotation */
 }
 
-/* Inner image styles */
+/* Inner Image Styles */
 .inner-image {
   width: 250px;
-  /* Slightly smaller size to give more prominence to the ring */
+  /* Default width */
   height: 250px;
-  /* Adjust size as needed */
+  /* Default height */
   border-radius: 50%;
   /* Make the inner image circular */
   object-fit: cover;
@@ -67,7 +75,7 @@
   /* Ensure the inner image is on top of the spinner ring */
 }
 
-/* Keyframes for spinner rotation */
+/* Keyframes for Spinner Rotation */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -78,44 +86,91 @@
   }
 }
 
-/* Loading text styles */
+/* Loading Text Styles */
 .loading-text {
   margin-top: 20px;
   font-size: 16px;
+  /* Default font size */
   color: #333;
+  /* Text color */
 }
 
-/* Responsive styles */
+/* Responsive Styles */
+
+/* For tablets and larger mobile devices */
 @media (max-width: 1024px) {
   .spinner-container {
     width: 250px;
+    /* Adjust size for tablets */
     height: 250px;
   }
 
   .spinner-ring {
     width: 250px;
+    /* Adjust size for tablets */
     height: 250px;
   }
 
   .inner-image {
     width: 150px;
+    /* Adjust size for tablets */
     height: 150px;
+  }
+
+  .loading-text {
+    font-size: 14px;
+    /* Adjust font size for tablets */
   }
 }
 
+/* For mobile devices */
 @media (max-width: 768px) {
   .spinner-container {
     width: 200px;
+    /* Adjust size for mobile */
     height: 200px;
   }
 
   .spinner-ring {
     width: 200px;
+    /* Adjust size for mobile */
     height: 200px;
   }
 
   .inner-image {
     width: 120px;
+    /* Adjust size for mobile */
     height: 120px;
+  }
+
+  .loading-text {
+    font-size: 12px;
+    /* Adjust font size for mobile */
+  }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+  .spinner-container {
+    width: 150px;
+    /* Further adjust size for very small screens */
+    height: 150px;
+  }
+
+  .spinner-ring {
+    width: 150px;
+    /* Further adjust size for very small screens */
+    height: 150px;
+  }
+
+  .inner-image {
+    width: 100px;
+    /* Further adjust size for very small screens */
+    height: 100px;
+  }
+
+  .loading-text {
+    font-size: 10px;
+    /* Further adjust font size for very small screens */
   }
 }
