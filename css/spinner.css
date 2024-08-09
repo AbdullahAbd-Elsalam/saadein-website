@@ -126,21 +126,21 @@ html {
 /* For mobile devices */
 @media (max-width: 768px) {
   .spinner-container {
-    width: 200px;
+    width: 150px;
     /* Adjust size for mobile */
-    height: 200px;
+    height: 150px;
   }
 
   .spinner-ring {
-    width: 200px;
+    width: 150px;
     /* Adjust size for mobile */
-    height: 200px;
+    height: 150px;
   }
 
   .inner-image {
-    width: 120px;
+    width: 140px;
     /* Adjust size for mobile */
-    height: 120px;
+    height: 140px;
   }
 
   .loading-text {
@@ -152,21 +152,21 @@ html {
 /* For very small mobile devices */
 @media (max-width: 480px) {
   .spinner-container {
-    width: 150px;
+    width: 170px;
     /* Further adjust size for very small screens */
-    height: 150px;
+    height: 170px;
   }
 
   .spinner-ring {
-    width: 150px;
+    width: 170px;
     /* Further adjust size for very small screens */
-    height: 150px;
+    height: 170px;
   }
 
   .inner-image {
-    width: 100px;
+    width: 150px;
     /* Further adjust size for very small screens */
-    height: 100px;
+    height: 150px;
   }
 
   .loading-text {
