@@ -152,21 +152,21 @@ html {
 /* For very small mobile devices */
 @media (max-width: 480px) {
   .spinner-container {
-    width: 170px;
+    width: 180px;
     /* Further adjust size for very small screens */
-    height: 170px;
+    height: 180px;
   }
 
   .spinner-ring {
-    width: 170px;
+    width: 180px;
     /* Further adjust size for very small screens */
-    height: 170px;
+    height: 180px;
   }
 
   .inner-image {
-    width: 150px;
+    width: 170px;
     /* Further adjust size for very small screens */
-    height: 150px;
+    height: 170px;
   }
 
   .loading-text {
