@@ -281,3 +281,87 @@ h2 {
     padding: 20px 20px;
   }
 }
+
+
+/* contact us  */
+
+/* Styles for the Contact Us Section */
+.contact-us-section {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  /* Light background color */
+  text-align: center;
+}
+
+.contact-us-section .main-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-us-section .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* Gap between contact details */
+}
+
+.contact-us-section .contact-info div {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.contact-us-section .contact-info i {
+  font-size: 24px;
+  color: #007bff;
+  /* Icon color */
+  margin-right: 10px;
+}
+
+.contact-us-section .contact-info a {
+  color: #007bff;
+  /* Link color */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-us-section .contact-info a:hover {
+  color: #0056b3;
+  /* Hover effect for links */
+}
+
+@media (max-width: 768px) {
+  .contact-us-section .contact-info {
+    flex-direction: column;
+  }
+}
+
+/*  vision of section  */
+
+.our-vision .content {
+  padding-right: 20px;
+  text-align: right;
+
+  font-size: 30px;
+}
+
+.our-vision .image {
+  text-align: center;
+}
+
+.our-vision img {
+  max-width: 100%;
+  width: 400px;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+
+  .our-vision .content,
+  .our-vision .image {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
