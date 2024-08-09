@@ -112,9 +112,9 @@ html {
   }
 
   .inner-image {
-    width: 150px;
+    width: 230px;
     /* Adjust size for tablets */
-    height: 150px;
+    height: 230px;
   }
 
   .loading-text {
