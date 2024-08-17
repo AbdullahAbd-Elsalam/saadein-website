@@ -121,6 +121,15 @@ h2 {
   text-align: center;
 }
 
+.values-section .value-box img {
+  width: 80px;
+  /* Adjust width as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-bottom: 15px;
+  /* Space between image and text */
+}
+
 .values-section .value-box h3 {
   color: #343a40;
   margin-bottom: 10px;
@@ -130,6 +139,69 @@ h2 {
   color: #6c757d;
   font-size: 1em;
 }
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .values-section {
+    padding: 30px 15px;
+  }
+
+  .values-section .value-box {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .values-section .value-box {
+    padding: 10px;
+  }
+
+  .values-section .value-box img {
+    width: 70px;
+    /* Adjust width for tablets */
+    margin-bottom: 10px;
+  }
+
+  .values-section .value-box h3 {
+    font-size: 1.1em;
+    /* Adjust font size for tablets */
+  }
+
+  .values-section .value-box p {
+    font-size: 0.9em;
+    /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .values-section {
+    padding: 20px 10px;
+  }
+
+  .values-section .value-box {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .values-section .value-box img {
+    width: 60px;
+    /* Further adjust width for mobile screens */
+    margin-bottom: 8px;
+  }
+
+  .values-section .value-box h3 {
+    font-size: 1em;
+    /* Adjust font size for mobile screens */
+  }
+
+  .values-section .value-box p {
+    font-size: 0.8em;
+    /* Adjust font size for mobile screens */
+  }
+}
+
+/* end values */
 
 /* Services section settings */
 /* Styles for the Services Section */
@@ -259,35 +331,12 @@ h2 {
   border-radius: 10px;
 }
 
-/* Navbar settings
-.navbar.navbar-light.bg-light {
-  background-color: #59525e !important;
-} */
-
-/* .collapse.navbar-collapse {
-  padding-left: 0;
-}
-
-.navbar-nav .nav-item {
-  padding: 15px 20px;
-} */
-
-/* Adjustments for larger screens */
-/* @media (min-width: 992px) {
-  .collapse.navbar-collapse {
-    padding-left: 200px;
-  }
-
-  .navbar-nav .nav-item {
-    padding: 20px 20px;
-  }
-} */
 
 
 
 /* Navbar settings */
 .navbar.navbar-light.bg-light {
-  background-color: #27465a !important;
+  background-color: #435d6f !important;
   transition: background-color 0.3s ease;
   /* Smooth background color transition */
 }
