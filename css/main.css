@@ -259,17 +259,70 @@ h2 {
   border-radius: 10px;
 }
 
-/* Navbar settings */
+/* Navbar settings
 .navbar.navbar-light.bg-light {
-  background-color: #dde4ec !important;
-}
+  background-color: #59525e !important;
+} */
 
-.collapse.navbar-collapse {
+/* .collapse.navbar-collapse {
   padding-left: 0;
 }
 
 .navbar-nav .nav-item {
   padding: 15px 20px;
+} */
+
+/* Adjustments for larger screens */
+/* @media (min-width: 992px) {
+  .collapse.navbar-collapse {
+    padding-left: 200px;
+  }
+
+  .navbar-nav .nav-item {
+    padding: 20px 20px;
+  }
+} */
+
+
+
+/* Navbar settings */
+.navbar.navbar-light.bg-light {
+  background-color: #27465a !important;
+  transition: background-color 0.3s ease;
+  /* Smooth background color transition */
+}
+
+.navbar-nav .nav-item {
+  padding: 15px 20px;
+}
+
+.nav-link {
+  color: #fff !important;
+  /* Set text color */
+  font-size: 1rem;
+  /* Font size for links */
+  display: flex;
+  align-items: center;
+  /* Align icons and text */
+  transition: color 0.3s ease;
+  /* Smooth color transition */
+}
+
+.nav-link i {
+  margin-right: 8px;
+  /* Space between icon and text */
+  transition: transform 0.3s ease;
+  /* Smooth icon transform */
+}
+
+.nav-link:hover {
+  color: #f4a261 !important;
+  /* Color change on hover */
+}
+
+.nav-link:hover i {
+  transform: scale(1.1);
+  /* Slightly enlarge icon on hover */
 }
 
 /* Adjustments for larger screens */
@@ -282,6 +335,96 @@ h2 {
     padding: 20px 20px;
   }
 }
+
+/* end nav bar */
+
+
+
+
+
+
+
+
+
+.up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #436895;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+  /* Initially hidden */
+  z-index: 1000;
+}
+
+.up.show {
+  display: block;
+}
+
+
+/* Ensure the container takes full width and height for each item */
+.number {
+  padding: 50px 0;
+  /* Add padding for spacing */
+  background-color: #2f2a36;
+  /* Example background color for the section */
+}
+
+.in-number {
+  display: flex;
+  flex-direction: column;
+  /* Arrange items vertically */
+  align-items: center;
+  /* Center align items horizontally */
+  text-align: center;
+  /* Center align text */
+  padding: 20px;
+  /* Add padding inside the container */
+  /* background: #2a1949; */
+  /* Background color for each item */
+  /* border: 1px solid #ddd; */
+  /* Optional: Add a border */
+  border-radius: 8px;
+  /* Optional: Round corners */
+}
+
+.in-number img {
+  margin-bottom: 10px;
+  /* Space between image and counter */
+}
+
+.in-number .counter {
+  font-size: 2rem;
+  /* Adjust size of the counter */
+  color: #1072c2;
+  /* Color of the counter */
+  margin: 10px 0;
+  /* Margin around the counter */
+}
+
+.in-number h3 {
+  font-size: 1.2rem;
+  /* Adjust font size of the text */
+  color: white;
+  /* Color of the text */
+  margin-top: 10px;
+  /* Margin between counter and text */
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+  .in-number {
+    padding: 15px;
+    /* Adjust padding for smaller screens */
+  }
+}
+
+
 
 
 /* contact us  */
